@@ -10,3 +10,8 @@ document.getElementById("contactform").addEventListener("submit", function(event
     "Terimakasih Telah Menghubungi Saya!";
     this.reset();
 });
+
+function toggleMenu() {
+    const menu = document.getElementById("navmenu");
+    menu.classList.toggle("active");
+}

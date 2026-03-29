@@ -30,9 +30,15 @@ nav a{
     text-decoration: none;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 .hero{
-    height: 90vh;
-    background: linear-gradient(135deg, #034689, #03a2b7a8);
+    height: 100vh;
+    background: linear-gradient(to right, #0f4c75, #3282b8);
     color: white;
     display: flex;
     flex-direction: column;
@@ -114,4 +120,48 @@ footer{
 
 html{
     scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
