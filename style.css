@@ -150,7 +150,6 @@ button{
 .massage{
     text-align: center;
     margin-top: 10px;
-    font-weight: bold;
 }
 
 footer{
@@ -186,8 +185,9 @@ html{
     }
 
     .hero {
-        height: auto;
-        padding: 80px 20px;
+        min-height: 100vh;
+        justify-content: center;
+        padding: 100px 20px;
     }
 
     .hero h2 {
