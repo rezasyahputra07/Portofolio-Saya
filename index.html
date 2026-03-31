@@ -7,47 +7,112 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-        <h1 class="logo">Fahreza Syahputra</h1>
-        
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        
-        <ul id="navmenu">
-            <li><a href="#home">Beranda</a></li>    
-            <li><a href="#projects">Proyek</a></li>
-            <li><a href="#about">Tentang Saya</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar">
+    <h1 class="logo">Fahreza</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="navMenu" class="nav-menu">
+        <li><a href="#home">Beranda</a></li>    
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
     <section id="home" class="hero">
         <h2>Halo, <span>Saya Fahreza Syahputra</span></h2>
         <p>Web Developer | Mobile Developer | Software Engineer</p>
         <button onclick="scrolltocontact()">Hubungi Saya</button>
+           
+        <div class="socials">
+            <a href="https://github.com/rezasyahputra07" target="_blank" class="social-btn github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" >
+            <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/fahreza-syahputra-9673ab393" target="_blank" class="social-btn linkedin">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+            <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/rezasyahptr07?igsh=MTNpMGQ3amJscmZjMQ==" target="_blank" class="social-btn instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
+            <span>Instagram</span>
+            </a>
+        </div>
     </section>
 
     <section id="about" class="section">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang web developer yang fokus pada pembuatan website</p>
-    </section>
+    <div class="container about-container">
+        
+        <div class="about-text">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah seorang mahasiswa Informatika di Universitas Pembangunan Nasional "Veteran" Yogyakarta yang memiliki minat besar dalam pengembangan perangkat lunak, khususnya di bidang web dan mobile development. Saya senang mempelajari teknologi baru serta mengembangkan solusi digital yang efektif dan efisien.
+            </p>
+
+            <p>
+                Saat ini saya terus mengembangkan kemampuan melalui berbagai proyek dan siap untuk berkontribusi dalam dunia teknologi sebagai developer profesional.
+            </p>
+        </div>
+
+        <div class="about-info">
+            <div class="info-card">
+                <h3>🎓 Pendidikan</h3>
+                <p>Mahasiswa Informatika Universitas Pembangunan Nasional "Veteran" Yogyakarta</p>
+            </div>
+
+            <div class="info-card">
+    <h3>💻 Skill</h3>
+
+    <div class="skill-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+    </div>
+
+</div>
+
+            <div class="info-card">
+                <h3>🚀 Fokus</h3>
+                <p>Web Developer & Mobile Developer</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <section id="projects" class="section">
+    <div class="container">
         <h2>Projects</h2>
 
         <div class="projects-list">
+
             <div class="card">
-                <h3>Project 1</h3>
-                <p>Deskripsi singkat tentang proyek 1.</p>
+                <img src="project1.png" alt="Project">
+                <h3>Website Portfolio</h3>
+                <p>Website personal menggunakan HTML, CSS, JavaScript</p>
+
+                <div class="btn-group">
+                    <a href="#">Demo</a>
+                    <a href="#">GitHub</a>
+                </div>
             </div>
+
             <div class="card">
-                <h3>Project 2</h3>
-                <p>Deskripsi singkat tentang proyek 2.</p>
+                <img src="project2.png" alt="Project">
+                <h3>Aplikasi Kasir</h3>
+                <p>Aplikasi sederhana menggunakan C++</p>
+
+                <div class="btn-group">
+                    <a href="#">Demo</a>
+                    <a href="#">GitHub</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>Deskripsi singkat tentang proyek 3.</p>
-            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="contact" class="section">
         <h2>Kontak saya</h2>
@@ -64,8 +129,22 @@
     </section>
 
     <footer>
-        <p>&copy;2026 Fahreza Syahputra. All right reserved.</p>
-    </footer>
+    <p>&copy;2026 Fahreza Syahputra. All right reserved.</p>
+
+    <div class="socials footer-socials">
+        <a href="https://github.com/rezasyahputra07" target="_blank" class="social-btn github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/fahreza-syahputra-9673ab393" target="_blank" class="social-btn linkedin">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+        </a>
+
+        <a href="https://www.instagram.com/rezasyahptr07" target="_blank" class="social-btn instagram">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
+        </a>
+    </div>
+</footer>
 
 </body>
 <script src="./script.js"></script>
