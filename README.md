@@ -8,8 +8,3 @@ Website portofolio pribadi yang dibangun menggunakan dasar-dasar HTML, CSS, dan 
 * HTML
 * CSS
 * JavaScript
-
-## 📁 Struktur File
-* `index.html` — Halaman utama
-* `style.css` — Tampilan & *styling*
-* `script.js` — Interaktivitas
